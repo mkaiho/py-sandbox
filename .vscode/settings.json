@@ -1,0 +1,28 @@
+{
+  "python.defaultInterpreterPath": "/work/py-sandbox/.venv/bin/python",
+  "python.pipenvPath": "/root/.asdf/shims/pipenv",
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--max-line-length=120",
+    "--max-complexity=20",
+  ],
+  "python.linting.mypyEnabled": true,
+  "python.linting.mypyPath": "/work/py-sandbox/.venv/bin/mypy",
+  "python.linting.mypyArgs": ["--config-file=mypy.ini"],
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+  },
+}
